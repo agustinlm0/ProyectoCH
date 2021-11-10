@@ -8712,16 +8712,16 @@ a:hover {
       color: whitesmoke;
       font-size: 18pt; }
   .EstiloFooterEquipo {
+    margin-top: 20px;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     justify-content: center; }
-  .EstiloFooterEquipo li {
-    letter-spacing: 5px;
-    margin-top: 30px;
-    padding: 60px;
-    height: 15px;
-    list-style-type: none;
-    border-radius: 30px; }
+    .EstiloFooterEquipo li {
+      letter-spacing: 5px;
+      padding: 25px;
+      list-style-type: none;
+      color: whitesmoke;
+      font-size: 18pt; }
   .EstiloDerechos {
     color: whitesmoke;
     text-align: center;
