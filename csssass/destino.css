@@ -8293,8 +8293,32 @@ textarea.form-control-lg {
     display: none !important; } }
 
 /*# sourceMappingURL=bootstrap.css.map */
-/*Desktop*/
 @media only screen and (min-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif; }
+  h2 {
+    text-align: center;
+    color: #faa403;
+    font-size: 25pt;
+    letter-spacing: 3px; }
+  body {
+    background-image: linear-gradient(#21415c, #023441, #00313d); }
+  header {
+    height: 100px; }
+  a {
+    text-decoration: none;
+    color: #fffaf2;
+    font-weight: 800; }
+  a:hover {
+    color: #f7ab1f;
+    font-size: 20pt; }
+  @keyframes efecto {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
   .LogoSitio {
     color: #fffaf2;
     font-size: 30pt;
@@ -8312,7 +8336,8 @@ textarea.form-control-lg {
     text-align: center;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center; }
+    justify-content: center;
+    font-weight: bolder; }
     .BarraNavegacion li {
       margin-right: 15px;
       margin-left: 15px;
@@ -8417,7 +8442,7 @@ textarea.form-control-lg {
       margin-bottom: 30px;
       width: 500px;
       height: 60px; }
-    .FormularioContacto .boton {
+    .FormularioContacto .ModeladoBoton {
       width: 100px;
       height: 50px;
       border-radius: 5px; }
@@ -8457,7 +8482,7 @@ textarea.form-control-lg {
     text-align: center;
     font-size: 18pt;
     line-height: 2.2; }
-  .equipo {
+  .ModeladoEquipo {
     animation-name: efecto;
     animation-duration: 3s;
     display: grid;
@@ -8470,6 +8495,10 @@ textarea.form-control-lg {
     margin-left: 80px;
     margin-right: 100px;
     margin-bottom: 15px; }
+  .card-text {
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center; }
   .FotosEquipo1 {
     grid-area: Perfil1;
     border-radius: 10px; }
