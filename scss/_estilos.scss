@@ -663,12 +663,11 @@
     margin-left: 120px;
     margin-right: 120px;
   }
-  .ModeladoNosotros{
-  display:flex;
-  }
+  
   .ModeladoCert{
     display: flex;
-    flex-flow: column nowrap; 
+    flex-flow: column ; 
+    align-items: flex-start;
     li{
       color: whitesmoke;
       font-size: 16pt;
@@ -676,6 +675,10 @@
       list-style-type: none;
     }
   }
+  .carousel-inner{
+    display: flex;
+    align-items: flex-end;
+ 
  
   .equipo{
     animation-name: efecto;
