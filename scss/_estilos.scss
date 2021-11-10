@@ -658,27 +658,24 @@
     margin-right: 100px;
    
   }
-
   .IconoServicios{
     margin-left: 120px;
     margin-right: 120px;
   }
-  
-  .ModeladoCert{
-    display: flex;
-    flex-flow: column ; 
-    align-items: flex-start;
-    li{
-      color: whitesmoke;
-      font-size: 16pt;
-      text-align: center;
-      list-style-type: none;
-    }
+  .ModeladoNosotros{
+    display: grid;
+    grid-template-areas: "ModeladoCert carousel slide";
+    animation-name: efecto;
+    animation-duration: 3s;
+    grid-column-gap: 120px;
   }
-  .carousel-inner{
-    display: flex;
-    align-items: flex-end;
- 
+ .ModeladoCert{
+   color: whitesmoke;
+   list-style-type:none;
+   text-align: center;
+   font-size: 18pt;
+   line-height: 2.2;
+ }
  
   .equipo{
     animation-name: efecto;
