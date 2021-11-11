@@ -4986,7 +4986,8 @@ textarea.form-control-lg {
 .carousel-inner {
   position: relative;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  display: flex; }
 
 .carousel-inner::after {
   display: block;
@@ -8430,7 +8431,6 @@ textarea.form-control-lg {
     letter-spacing: 3px;
     line-height: 2.3;
     text-align: center;
-    font-style: italic;
     margin-top: 80px; }
     .FormularioContacto textarea {
       margin-top: 30px;
@@ -8470,18 +8470,14 @@ textarea.form-control-lg {
   .IconoServicios {
     margin-left: 120px;
     margin-right: 120px; }
-  .ModeladoNosotros {
-    display: grid;
-    grid-template-areas: "ModeladoCert carousel slide";
-    animation-name: efecto;
-    animation-duration: 3s;
-    grid-column-gap: 120px; }
   .ModeladoCert {
     color: whitesmoke;
     list-style-type: none;
     text-align: center;
     font-size: 18pt;
-    line-height: 2.2; }
+    line-height: 2;
+    animation-name: efecto;
+    animation-duration: 3s; }
   .ModeladoEquipo {
     animation-name: efecto;
     animation-duration: 3s;
