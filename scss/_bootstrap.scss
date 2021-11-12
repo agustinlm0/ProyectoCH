@@ -682,6 +682,7 @@ progress {
 
 .col {
   flex: 1 0 0%;
+ 
 }
 
 .row-cols-auto > * {
@@ -4490,16 +4491,14 @@ textarea.form-control-lg {
 
 .card {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 19.5rem;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
   border-radius: 0.25rem;
   width: 350px;
-
+  background-color: rgba(255, 140, 64, 0.836);
 }
+
 .card > hr {
   margin-right: 0;
   margin-left: 0;
@@ -4526,10 +4525,19 @@ textarea.form-control-lg {
 .card-body {
   flex: 1 1 auto;
   padding: 1rem 1rem;
+  color: whitesmoke;
+}
+.card-text{
+  font-size: 18pt;
+  font-weight: lighter;
+  text-align: center;
 }
 
 .card-title {
   margin-bottom: 0.5rem;
+  font-size:25pt;
+  font-family: sans-serif;
+
 }
 
 .card-subtitle {
@@ -4539,6 +4547,7 @@ textarea.form-control-lg {
 
 .card-text:last-child {
   margin-bottom: 0;
+  
 }
 
 .card-link + .card-link {
@@ -5977,9 +5986,10 @@ textarea.form-control-lg {
 
 .carousel-inner {
   position: relative;
-  width: 100%;
   overflow: hidden;
-  display: flex;
+  margin-top: 150px;
+  animation-name: efecto;
+  animation-duration: 3s;
   
 }
 .carousel-inner::after {

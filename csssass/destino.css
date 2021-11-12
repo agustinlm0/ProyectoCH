@@ -3674,14 +3674,12 @@ textarea.form-control-lg {
 
 .card {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 19.5rem;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
   border-radius: 0.25rem;
-  width: 350px; }
+  width: 350px;
+  background-color: rgba(255, 140, 64, 0.836); }
 
 .card > hr {
   margin-right: 0;
@@ -3707,10 +3705,18 @@ textarea.form-control-lg {
 
 .card-body {
   flex: 1 1 auto;
-  padding: 1rem 1rem; }
+  padding: 1rem 1rem;
+  color: whitesmoke; }
+
+.card-text {
+  font-size: 18pt;
+  font-weight: lighter;
+  text-align: center; }
 
 .card-title {
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem;
+  font-size: 25pt;
+  font-family: sans-serif; }
 
 .card-subtitle {
   margin-top: -0.25rem;
@@ -4985,9 +4991,10 @@ textarea.form-control-lg {
 
 .carousel-inner {
   position: relative;
-  width: 100%;
   overflow: hidden;
-  display: flex; }
+  margin-top: 150px;
+  animation-name: efecto;
+  animation-duration: 3s; }
 
 .carousel-inner::after {
   display: block;
@@ -8305,7 +8312,7 @@ textarea.form-control-lg {
     font-size: 25pt;
     letter-spacing: 3px; }
   body {
-    background-image: linear-gradient(#21415c, #023441, #00313d); }
+    background-image: linear-gradient(#21415c, #00313d); }
   header {
     height: 100px; }
   a {
@@ -8348,19 +8355,25 @@ textarea.form-control-lg {
       letter-spacing: 5px;
       font-size: 18pt;
       font-weight: 700; }
+  .TitulosInicio {
+    font-size: xx-large;
+    font-family: sans-serif; }
   .TextoInicio {
     margin-top: 80px;
-    margin-left: 50px;
-    margin-bottom: 15px;
-    margin-right: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
     color: #fffaf2;
     text-align: center;
     letter-spacing: 3px;
-    line-height: 2.2;
+    line-height: 2;
     animation-name: efecto;
     animation-duration: 3s;
-    font-size: 18pt;
-    font-weight: bolder; }
+    font-size: 22pt; }
+  .TextoCar {
+    font-size: 20pt;
+    text-align: center;
+    color: whitesmoke;
+    font-family: sans-serif; }
   .EstiloFooter {
     margin-top: 20px;
     display: flex;
@@ -8390,8 +8403,19 @@ textarea.form-control-lg {
   .ModeladoServicios {
     display: flex;
     flex-flow: row nowrap;
-    margin-top: 50px;
-    margin-bottom: 10px; }
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px; }
+  .ListaServicios {
+    margin-bottom: 100px;
+    list-style-type: none;
+    word-spacing: 3px;
+    line-height: 2.8;
+    color: #fffaf2;
+    animation-name: efecto;
+    animation-duration: 2s;
+    font-size: 18pt;
+    font-weight: bolder; }
   .TextoNosotros {
     margin-top: 80px;
     margin-left: 50px;
@@ -8408,21 +8432,6 @@ textarea.form-control-lg {
     font-weight: bolder; }
     .TextoNosotros ul {
       list-style-type: none; }
-  .ListaServicios {
-    margin-left: 50px;
-    margin-right: 30px;
-    margin-top: 50px;
-    margin-bottom: 15px;
-    list-style-type: disc;
-    word-spacing: 3px;
-    line-height: 2.8;
-    color: #fffaf2;
-    animation-name: efecto;
-    animation-duration: 2s;
-    font-size: 15pt;
-    font-weight: bolder; }
-  .borde {
-    border: solid 5px black; }
   .FormularioContacto {
     animation-name: efecto;
     animation-duration: 3s;
@@ -8451,13 +8460,12 @@ textarea.form-control-lg {
     flex-flow: row nowrap;
     justify-content: center; }
     .ListaMedios li {
-      margin-top: 100px;
+      font-family: sans-serif;
+      margin-top: 115px;
       margin-right: 15px;
       margin-left: 5px;
-      padding: 10px;
-      letter-spacing: 10px;
       list-style-type: none;
-      font-size: xx-large;
+      font-size: 28pt;
       color: whitesmoke; }
   .IconoContacto {
     margin-top: 100px;
@@ -8482,31 +8490,30 @@ textarea.form-control-lg {
     animation-name: efecto;
     animation-duration: 3s;
     display: grid;
-    grid-template-areas: "Perfil1 perfil2 Perfil3" "Perfil4 Perfil5 none";
+    grid-template-areas: "Perfil1 perfil2 Perfil3" "Perfil4 Perfil5 Perfil6";
     grid-template-columns: 10px 10px 10px;
     grid-template-rows: 25px;
     grid-column-gap: 420px;
-    grid-row-gap: 500px;
+    grid-row-gap: 550px;
     margin-top: 80px;
     margin-left: 80px;
     margin-right: 100px;
     margin-bottom: 15px; }
-  .card-text {
-    font-size: 16pt;
-    font-weight: bold;
-    text-align: center; }
   .FotosEquipo1 {
     grid-area: Perfil1;
-    border-radius: 10px; }
+    border-radius: 25px; }
   .FotosEquipo2 {
     grid-area: Perfil2;
-    border-radius: 10px; }
+    border-radius: 25px; }
   .FotosEquipo3 {
     grid-area: Perfil3;
-    border-radius: 10px; }
+    border-radius: 25px; }
   .FotosEquipo4 {
     grid-area: Perfil4;
-    border-radius: 10px; }
+    border-radius: 25px; }
   .FotosEquipo5 {
     grid-area: Perfil5;
-    border-radius: 10px; } }
+    border-radius: 25px; }
+  .FotosEquipo6 {
+    grid-area: Perfil6;
+    border-radius: 25px; } }
