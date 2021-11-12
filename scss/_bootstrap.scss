@@ -332,7 +332,7 @@ label {
 
 button {
   border-radius: 0;
-}
+  }
 
 button:focus:not(:focus-visible) {
   outline: 0;
@@ -2555,11 +2555,13 @@ textarea.form-control-lg {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
-}
+  
 .btn-check[disabled] + .btn, .btn-check:disabled + .btn {
   pointer-events: none;
   filter: none;
   opacity: 0.65;
+  
+}
 }
 
 .form-range {
@@ -3134,6 +3136,7 @@ textarea.form-control-lg {
   color: #000;
   background-color: #ffc107;
   border-color: #ffc107;
+  font-family: sans-serif;
 }
 .btn-warning:hover {
   color: #000;

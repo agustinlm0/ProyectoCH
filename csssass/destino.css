@@ -1915,11 +1915,10 @@ textarea.form-control-lg {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none; }
-
-.btn-check[disabled] + .btn, .btn-check:disabled + .btn {
-  pointer-events: none;
-  filter: none;
-  opacity: 0.65; }
+  .btn-check .btn-check[disabled] + .btn, .btn-check .btn-check:disabled + .btn {
+    pointer-events: none;
+    filter: none;
+    opacity: 0.65; }
 
 .form-range {
   width: 100%;
@@ -2457,7 +2456,8 @@ textarea.form-control-lg {
 .btn-warning {
   color: #000;
   background-color: #ffc107;
-  border-color: #ffc107; }
+  border-color: #ffc107;
+  font-family: sans-serif; }
 
 .btn-warning:hover {
   color: #000;
@@ -8305,23 +8305,21 @@ textarea.form-control-lg {
   * {
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif; }
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
   h2 {
     text-align: center;
     color: #faa403;
-    font-size: 25pt;
+    font-size: 22pt;
     letter-spacing: 3px; }
   body {
     background-image: linear-gradient(#21415c, #00313d); }
-  header {
-    height: 100px; }
   a {
     text-decoration: none;
     color: #fffaf2;
-    font-weight: 800; }
+    font-weight: lighter; }
   a:hover {
     color: #f7ab1f;
-    font-size: 20pt; }
+    font-size: 22pt; }
   @keyframes efecto {
     0% {
       opacity: 0; }
@@ -8329,23 +8327,23 @@ textarea.form-control-lg {
       opacity: 1; } }
   .LogoSitio {
     color: #fffaf2;
-    font-size: 30pt;
+    font-size: 28pt;
     font-weight: bolder;
-    margin-left: 5px;
     font-family: monospace;
     font-style: italic;
-    letter-spacing: 10px;
-    margin-left: 1.5rem; }
+    letter-spacing: 5px;
+    text-align: center;
+    background-color: rgba(250, 124, 40, 0.836); }
+  .SubTitulo {
+    font-size: 14pt; }
   .BarraNavegacion {
     text-transform: uppercase;
-    font-size: large;
     list-style-type: none;
     letter-spacing: 10px;
     text-align: center;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
-    font-weight: bolder; }
+    justify-content: center; }
     .BarraNavegacion li {
       margin-right: 15px;
       margin-left: 15px;
@@ -8353,13 +8351,12 @@ textarea.form-control-lg {
       height: 25px;
       padding: 20px 20px;
       letter-spacing: 5px;
-      font-size: 18pt;
-      font-weight: 700; }
+      font-size: 20pt; }
   .TitulosInicio {
     font-size: xx-large;
     font-family: sans-serif; }
   .TextoInicio {
-    margin-top: 80px;
+    margin-top: 30px;
     margin-left: 80px;
     margin-right: 80px;
     color: #fffaf2;
@@ -8405,19 +8402,21 @@ textarea.form-control-lg {
     flex-flow: row nowrap;
     justify-content: center;
     text-align: center;
-    margin-top: 80px; }
+    margin-top: 50px; }
   .ListaServicios {
-    margin-bottom: 100px;
+    text-align: center;
     list-style-type: none;
+    padding-left: 50px;
+    padding-right: 20px;
     word-spacing: 3px;
-    line-height: 2.8;
+    line-height: 2.5;
     color: #fffaf2;
     animation-name: efecto;
     animation-duration: 2s;
-    font-size: 18pt;
-    font-weight: bolder; }
+    font-size: 20pt;
+    font-weight: lighter; }
   .TextoNosotros {
-    margin-top: 80px;
+    margin-top: 40px;
     margin-left: 50px;
     margin-bottom: 30px;
     margin-right: 50px;
@@ -8429,7 +8428,7 @@ textarea.form-control-lg {
     animation-name: efecto;
     animation-duration: 3s;
     font-size: 18pt;
-    font-weight: bolder; }
+    font-weight: lighter; }
     .TextoNosotros ul {
       list-style-type: none; }
   .FormularioContacto {
@@ -8442,10 +8441,8 @@ textarea.form-control-lg {
     text-align: center;
     margin-top: 80px; }
     .FormularioContacto textarea {
-      margin-top: 30px;
       width: 500px;
-      height: 250px;
-      border-radius: 3px; }
+      height: 200px; }
     .FormularioContacto input {
       margin-top: 10px;
       margin-bottom: 30px;
@@ -8461,23 +8458,20 @@ textarea.form-control-lg {
     justify-content: center; }
     .ListaMedios li {
       font-family: sans-serif;
-      margin-top: 115px;
-      margin-right: 15px;
-      margin-left: 5px;
+      margin-top: 10px;
+      padding-right: 80px;
       list-style-type: none;
       font-size: 28pt;
       color: whitesmoke; }
-  .IconoContacto {
-    margin-top: 100px;
-    margin-left: 30px; }
   .MediosContacto {
+    margin-top: 50px;
     animation-name: efecto;
     animation-duration: 3s;
-    margin-left: 100px;
-    margin-right: 100px; }
+    background-color: rgba(250, 124, 40, 0.836); }
   .IconoServicios {
     margin-left: 120px;
-    margin-right: 120px; }
+    margin-right: 120px;
+    margin-bottom: 30px; }
   .ModeladoCert {
     color: whitesmoke;
     list-style-type: none;
@@ -8486,6 +8480,8 @@ textarea.form-control-lg {
     line-height: 2;
     animation-name: efecto;
     animation-duration: 3s; }
+  .CertH:hover {
+    color: #ff7b00; }
   .ModeladoEquipo {
     animation-name: efecto;
     animation-duration: 3s;
@@ -8500,20 +8496,14 @@ textarea.form-control-lg {
     margin-right: 100px;
     margin-bottom: 15px; }
   .FotosEquipo1 {
-    grid-area: Perfil1;
-    border-radius: 25px; }
+    grid-area: Perfil1; }
   .FotosEquipo2 {
-    grid-area: Perfil2;
-    border-radius: 25px; }
+    grid-area: Perfil2; }
   .FotosEquipo3 {
-    grid-area: Perfil3;
-    border-radius: 25px; }
+    grid-area: Perfil3; }
   .FotosEquipo4 {
-    grid-area: Perfil4;
-    border-radius: 25px; }
+    grid-area: Perfil4; }
   .FotosEquipo5 {
-    grid-area: Perfil5;
-    border-radius: 25px; }
+    grid-area: Perfil5; }
   .FotosEquipo6 {
-    grid-area: Perfil6;
-    border-radius: 25px; } }
+    grid-area: Perfil6; } }
