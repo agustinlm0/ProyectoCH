@@ -8358,15 +8358,17 @@ textarea.form-control-lg {
     animation-name: efecto;
     animation-duration: 3s; }
   .card {
-    border-radius: 50px;
-    display: flex; }
+    width: 100%;
+    border-radius: 20px; }
+  .card-body {
+    margin-bottom: 25px; }
   .TextoCar {
     font-size: 10pt;
     text-align: center;
     color: whitesmoke;
     font-family: sans-serif; }
   .carousel-inner {
-    width: 90%;
+    width: 100%;
     margin-top: 15%; }
   .carousel-control-prev {
     display: none; }
@@ -8385,13 +8387,11 @@ textarea.form-control-lg {
     margin-top: 20px;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center; }
+    margin-left: 20px;
+    margin-right: 20px; }
     .EstiloFooterEquipo li {
-      letter-spacing: 5px;
-      padding: 25px;
-      list-style-type: none;
-      color: whitesmoke;
-      font-size: 18pt; }
+      padding: 5px;
+      list-style-type: none; }
   .EstiloDerechos {
     color: whitesmoke;
     text-align: center;
@@ -8473,27 +8473,8 @@ textarea.form-control-lg {
   .CertH:hover {
     color: #ff7b00; }
   .ModeladoEquipo {
-    animation-name: efecto;
-    animation-duration: 3s;
-    display: grid;
-    grid-template-areas: "Perfil1" "perfil2" "Perfil3" "Perfil4"  "Perfil5"  "Perfil6";
-    grid-row-gap: 100px;
-    margin-top: 50px;
-    margin-left: 30px;
-    margin-right: 35px;
-    margin-bottom: 15px; }
-  .FotosEquipo1 {
-    grid-area: Perfil1; }
-  .FotosEquipo2 {
-    grid-area: Perfil2; }
-  .FotosEquipo3 {
-    grid-area: Perfil3; }
-  .FotosEquipo4 {
-    grid-area: Perfil4; }
-  .FotosEquipo5 {
-    grid-area: Perfil5; }
-  .FotosEquipo6 {
-    grid-area: Perfil6; } }
+    padding: 20px;
+    margin-top: 20px; } }
 
 /*Tablet*/
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
