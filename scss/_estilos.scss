@@ -196,9 +196,7 @@ margin-top: 50px;
 animation-name: efecto;
 animation-duration: 3s;
 background-color: rgba(250, 124, 40, 0.836);
-
 }
-
 .ModeladoCert{
 color: whitesmoke;
 list-style-type:none;
@@ -211,12 +209,10 @@ animation-duration: 3s;
 .CertH:hover{
 color: rgb(255, 123, 0);
 }
-
 .ModeladoEquipo{
   padding: 20px;
   margin-top: 20px;
 }
-
 }
 
 /*Tablet*/
@@ -473,18 +469,7 @@ color: rgb(255, 123, 0);
   .FotosEquipo6{
     grid-area: Perfil6;
   }
-
-
-
-
-
   }
-
-
-
-
-
-
 
   @media only screen and (min-width:1024px) {
     .navbar{
