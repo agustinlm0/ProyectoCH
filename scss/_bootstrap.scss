@@ -663,6 +663,7 @@ progress {
   }
 }
 .row {
+ 
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -682,6 +683,9 @@ progress {
 
 .col {
   flex: 1 0 0%;
+  
+  
+  
  
 }
 
