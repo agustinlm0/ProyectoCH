@@ -8398,8 +8398,7 @@ textarea.form-control-lg {
   .EstiloDerechos {
     color: whitesmoke;
     text-align: center;
-    font-size: 12pt;
-    display: none; }
+    font-size: 12pt; }
   .ModeladoServicios {
     display: flex;
     flex-flow: column nowrap;
@@ -8529,26 +8528,31 @@ textarea.form-control-lg {
     font-size: xx-large;
     font-family: sans-serif; }
   .TextoInicio {
+    width: 100%;
     margin-top: 10px;
     color: #fffaf2;
     text-align: center;
     letter-spacing: 3px;
-    line-height: 2;
+    line-height: 1.8;
     animation-name: efecto;
     animation-duration: 3s;
     font-size: 18pt; }
+  .row {
+    width: 99.99%;
+    padding: 6px; }
   .TextoCar {
     font-size: 20pt;
     text-align: center;
     color: whitesmoke;
     font-family: sans-serif; }
   .card {
-    width: 250px; }
+    width: 230px;
+    margin-left: 11px; }
   .card-title {
-    font-size: 20pt;
+    font-size: 18pt;
     font-family: sans-serif; }
   .card-text {
-    font-size: 16pt;
+    font-size: 15pt;
     font-weight: lighter;
     text-align: center; }
   .EstiloFooter {
